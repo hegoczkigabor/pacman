@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  
+  <title>Pacman Game - University of Szeged</title>
+
+  <link rel="stylesheet" type="text/css" href="css.css" >
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" >
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
+  <script src="src/pacman/Audio.js"></script>
+  <script src="src/pacman/Graph.js"></script>
+  <script src="src/pacman/Map.js"></script>
+  <script src="src/pacman/Player.js"></script>
+  <script src="src/pacman/Ghost.js"></script>
+  <script src="src/pacman/Game.js"></script>
+  <script src="src/pacman/Main.js" ></script>
+  
+  <script src="src/pacman/ScoreBoard.js"></script>
+
+  <script type="text/javascript">
+
+    $(window).load(function(){
+      var canvas = document.getElementById("gameCanvas");
+      pacman.Main.init(canvas.getContext('2d'));
+    });
+    
+  </script>
+
+</head> 
+
+<body>
+  <center>
+    <div class="main">
+      <div class="head">PACMAN</div>
+      <div class="info">
+        <div class="scores">Score: <span id="actual-score">-</span></div>
+        <div class="lives">Lives:  <span id="actual-lives">-</span></div>
+      </div>
+      <canvas id="gameCanvas"></canvas>
+      <div class="footer">
+        Gábor Hegoczki - University of Szeged 
+      </div>
+    </div>
+  </center>
+</body>
+
+</html>

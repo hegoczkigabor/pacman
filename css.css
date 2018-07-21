@@ -1,0 +1,70 @@
+@font-face {
+  font-family: pacman;
+  src: url("fonts/crackman front.ttf");
+}
+
+@font-face {
+  font-family: concertOne;
+  src: url("fonts/ConcertOne-Regular.ttf");
+}
+
+body{
+  background-color:black;
+  color:white;
+}
+
+.main{
+  overflow:hidden;
+  display:inline-block;
+}
+
+.head{
+  font-size: 89px;
+  color:yellow;
+  font-family: pacman;
+}
+
+.info{
+  font-family:concertOne;
+  padding-bottom:10px;
+  overflow:hidden;
+}
+
+.scores{
+  color:yellow;
+  font-size:21px;
+  float:left;
+}
+
+.lives{
+  color:yellow;
+  font-size:21px;
+  float:right;
+}
+
+.main-content{
+  display:inline-block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.footer{
+  padding:10px;
+  font-family: concertOne;
+}
+
+.ui-widget-overlay{
+  background-color:black !important;
+}
+
+.ui-widget-header{
+  border:none !important;
+  background:none !important;
+}
+
+.ui-corner-all{
+  border-radius:0px !important;
+}
